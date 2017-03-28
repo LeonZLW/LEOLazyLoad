@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gge-fM-NmU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="FCR-ND-8CE">
+            <objects>
+                <navigationController id="gge-fM-NmU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HPK-EV-oGH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="X2R-hm-DBZ" kind="relationship" relationship="rootViewController" id="rbn-p2-tok"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lwk-0Y-Hiq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-650" y="-12"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zfl-rB-f9h">
+            <objects>
+                <viewController id="jph-6y-Xsq" customClass="LEOViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JZO-vZ-83R"/>
+                        <viewControllerLayoutGuide type="bottom" id="33q-Gf-GZp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nrm-fo-Gm9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="300" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Chv-zv-9ZM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LEOImageCell" id="mii-Mv-Omc" customClass="LEOImageCell">
+                                        <rect key="frame" x="0.0" y="1" width="375" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mii-Mv-Omc" id="6KM-cy-5eF">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="OXb-fQ-MSP">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="OXb-fQ-MSP" firstAttribute="leading" secondItem="6KM-cy-5eF" secondAttribute="leading" id="0YF-ma-9oc"/>
+                                                <constraint firstAttribute="bottom" secondItem="OXb-fQ-MSP" secondAttribute="bottom" id="5gR-OY-Zfj"/>
+                                                <constraint firstAttribute="trailing" secondItem="OXb-fQ-MSP" secondAttribute="trailing" id="YK0-8X-vxM"/>
+                                                <constraint firstItem="OXb-fQ-MSP" firstAttribute="top" secondItem="6KM-cy-5eF" secondAttribute="top" id="df4-Go-N86"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="leoImageView" destination="OXb-fQ-MSP" id="v5Y-zS-j5T"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Chv-zv-9ZM" firstAttribute="bottom" secondItem="33q-Gf-GZp" secondAttribute="top" id="ZFy-PX-1qB"/>
+                            <constraint firstAttribute="trailing" secondItem="Chv-zv-9ZM" secondAttribute="trailing" id="cmr-zW-XZL"/>
+                            <constraint firstItem="Chv-zv-9ZM" firstAttribute="leading" secondItem="nrm-fo-Gm9" secondAttribute="leading" id="dq8-Pb-xB3"/>
+                            <constraint firstItem="Chv-zv-9ZM" firstAttribute="top" secondItem="JZO-vZ-83R" secondAttribute="bottom" constant="-64" id="qfW-Aw-rWS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="veA-hN-YlE"/>
+                    <connections>
+                        <outlet property="showImageTableView" destination="Chv-zv-9ZM" id="Uhb-fr-qg9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Zf-6C-jIH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757.60000000000002" y="-90.404797601199405"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="27q-Bs-wEO">
+            <objects>
+                <viewController id="X2R-hm-DBZ" customClass="LEORootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cfr-FY-DTp"/>
+                        <viewControllerLayoutGuide type="bottom" id="20m-1f-B4t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sDn-nd-olf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Td6-qy-Mmz">
+                                <rect key="frame" x="141" y="318" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="图片加载页面"/>
+                                <connections>
+                                    <segue destination="jph-6y-Xsq" kind="push" id="dff-IK-hSC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uS0-xx-F0J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J01-J2-njr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="-59"/>
+        </scene>
+    </scenes>
+</document>

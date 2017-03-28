@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-LEOLazyLoad.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-LEOLazyLoadTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-LEOLazyLoadUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>36FD807DF5768E91131417886F7ED7D9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>60F80CCB8587301B8B27DB341C388114</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>85DBD58366CBB287E3FA294C2DA8E2C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>95F0B480F68B4C92148BCC4CE0577C0D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
